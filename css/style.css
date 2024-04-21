@@ -1,0 +1,355 @@
+/* 
+    Objectif pour la prochaine fois :
+
+    renommer les classes .card1 et .card2 en .card dans le HTML
+    et pareil dans le CSS
+    pour la partie populaire reprandre le css de base
+
+    du coup pour appliquer du css sur les card hébergement, tu auras juste à faire .hebergements .card {}
+
+    vérifie bien le nom des class hebergements, bon courage !   
+*/
+/****** General ***********/
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+}
+
+.fa-solid {
+    color: var(--main-color);
+}
+
+body {
+    margin: 0;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.section-title {
+    margin: 0;
+    font-size: 22px;
+}
+
+.card {
+
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card img {
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 16px;
+}
+
+.euro {
+    font-weight: 700;
+}
+
+.neutral-star {
+    color: var(--main-bg-color)
+}
+
+/* ... Autres styles globaux ... */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navigation {
+    list-style: none;
+}
+
+.navigation-li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.search-section {
+    position: relative;
+    display: flex;
+}
+
+.search-bar {
+    display: flex;
+}
+
+.search-button {
+    background-color: #0065FC;
+    border-radius: 0 20px 20px 0;
+    font-size: medium;
+    font-weight: bold;
+}
+
+i.fa-location-dot {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 40px;
+    border-radius: 20px 0 0 20px;
+    position: relative;
+    color: #000;
+    background-color: hsl(240, 41%, 90%);
+}
+
+
+.fa-solid {
+    /* background-color: rebeccapurple; */
+    border: #d0d5dd;
+    /* border-radius: 50%; */
+    display: flex;
+    position: static;
+    font-size: medium;
+    font-weight: bold;
+    justify-content: space-between;
+    fill: #000;
+}
+
+.i {
+    background-color: #fff;
+    justify-content: space-between;
+    display: flex;
+    width: auto;
+    position: absolute;
+}
+
+input[type="search"] {
+    color: #000;
+    align-items: center;
+    font-size: medium;
+    font-weight: bold;
+    width: auto;
+    max-width: 180px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.filter-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.filter-badge {
+    display: inline-flex;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: 1px solid #0065FC;
+    border-radius: 20px;
+    cursor: pointer;
+    justify-content: space-evenly;
+}
+
+.filter-badge.active {              
+    background-color: #0065FC;
+    color: white;
+}
+
+/****** Hebergements And Populaires ***********/
+.hebergements-and-populaires {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hebergements-and-populaires section {
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.card {
+    position: relative;
+    align-content: center;
+    display: inline-flex;
+}
+
+.card-rating {
+    display: inline-flex;
+}
+
+
+
+/****** Hebergements ***********/
+.hebergements {
+    width: 65%;
+}
+
+.hebergements-cards         {
+    display: flex;
+flex-wrap: wrap;
+}
+
+.hebergements .card {
+    display: block;
+    justify-content: space-between;
+    margin : 0.5rem;
+min-width: 240px;
+}
+
+.hebergements .card img {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.hebergements .card-content{
+    padding: 15px;
+}
+/****** Populaires ***********/
+.populaires {
+    width: 32%;
+}
+
+.populaires-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.populaires-cards .card {
+    display: flex;
+    margin-top: 33px;
+}
+
+.populaires-cards img {
+    width: 33%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.populaires-cards .card-content {
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.populaires-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.populaires-cards .card-subtitle {
+    margin: 0;
+}
+
+.populaires-cards .card-rating {
+    margin-bottom: 5px;
+}
+
+.activites {
+    justify-content: space-around;
+    width: auto;
+}
+
+
+
+
+.activites .card img {
+    display: inline-flex;
+    width: 60%;
+    height: 155px;
+    border-radius: 20%;
+    justify-content: space-between;
+}
+
+.activites .card {
+    display: inline-flex;
+    justify-content: space-between;
+
+}
+
+footer .card {
+    border-radius: 0%;
+    background-color: #ccc;
+    padding: 12px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;    
+    align-content:space-between
+
+}
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+    .hebergements-and-populaires {
+        flex-direction: column;
+    }
+
+    .hebergements {
+        width: 100%;
+    }
+
+    .populaires {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .populaires-cards a {
+        width: 30%;
+    }
+
+    .populaires-cards .card-title {
+        font-size: 14px;
+    }
+
+    .populaires-cards .card-subtitle {
+        font-size: 13px;
+    }
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+    .navigation-li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+/* ... */

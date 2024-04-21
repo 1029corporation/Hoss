@@ -1,0 +1,141 @@
+/* Réinitialisation des styles par défaut */
+* {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables globales */
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+}
+
+/* Styles généraux pour tous les éléments */
+body {
+    /* Ajustements de base pour le corps de la page */
+}
+
+a {
+    /* Styles pour les liens */
+}
+
+/* Styles de la barre de navigation */
+.nav {
+    /* Styles pour la barre de navigation */
+}
+
+.logo {
+    /* Styles pour le logo */
+}
+
+.navigation {
+    /* Styles pour la navigation */
+}
+
+/* Styles pour la section de recherche */
+.search-section {
+    /* Styles pour la section de recherche */
+}
+
+.search-bar {
+    /* Styles pour la barre de recherche */
+}
+
+.search-button {
+    /* Styles pour le bouton de recherche */
+}
+
+/* Styles pour les filtres */
+.filter-options {
+    /* Styles pour les options de filtre */
+}
+
+.filter-badge {
+    /* Styles pour les badges de filtre */
+}
+
+.filter-badge.active {
+    /* Styles pour les badges de filtre actifs */
+}
+
+/* Styles pour les cartes (généraux) */
+.card {
+    /* Styles communs à toutes les cartes */
+}
+
+.card img {
+    /* Styles pour les images à l'intérieur des cartes */
+}
+
+.card-title {
+    /* Styles pour les titres des cartes */
+}
+
+.euro {
+    /* Styles pour la partie "€" dans les cartes */
+}
+
+.neutral-star {
+    /* Styles pour les étoiles non sélectionnées dans les notations */
+}
+
+/* Styles spécifiques aux cartes d'hébergement */
+.hebergements .card {
+    /* Styles spécifiques aux cartes d'hébergement */
+}
+
+.hebergements img {
+    /* Styles spécifiques aux images dans les cartes d'hébergement */
+}
+
+/* Styles spécifiques aux cartes populaires */
+.populaires .card {
+    /* Styles spécifiques aux cartes populaires */
+}
+
+.populaires-cards .card-content {
+    /* Styles spécifiques au contenu des cartes populaires */
+}
+
+/* Styles pour la section d'activités */
+.activites {
+    /* Styles pour la section d'activités */
+}
+
+/* Styles pour le pied de page */
+footer {
+    /* Styles pour le pied de page */
+}
+
+.card2 {
+    /* Styles pour les éléments dans le pied de page */
+}
+
+.card2-content {
+    /* Styles pour le contenu des éléments dans le pied de page */
+}
+
+.card2-txt {
+    /* Styles pour le texte des éléments dans le pied de page */
+}
+
+.card2-title {
+    /* Styles pour les titres des éléments dans le pied de page */
+}
+
+.card2-subtitle {
+    /* Styles pour les sous-titres des éléments dans le pied de page */
+}
+
+/* Media queries pour la version responsive */
+@media (max-width: 1024px) {
+    /* Styles spécifiques aux appareils de taille moyenne */
+}
+
+@media (max-width: 768px) {
+    /* Styles spécifiques aux petits appareils */
+}
+
